@@ -1,0 +1,17 @@
+{
+  "name": "scrapxtension",
+  "version": "2.1",
+  "description": "Gets content from active page.",
+  "icons": {
+    "128": "icon.png"
+  },
+  "browser_action": {
+    "default_title": "Test",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "activeTab",
+    "<all_urls>"
+  ],
+  "manifest_version": 2
+}
