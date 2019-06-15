@@ -4,7 +4,12 @@ document.getElementById("test").addEventListener('click', () => {
 
   function modifyDOM() {
       //You can play with your DOM here or check URL against your regex
-      const allParagraphs = document.querySelectorAll('p');
+      const allParagraphs = [];
+      
+      document.querySelectorAll('p').forEach((item) => {
+        allParagraphs.push(item.innerHTML);
+      });
+      
       console.info('All P Tags > ', allParagraphs);
       return document.body.innerHTML;
   }
